@@ -14,8 +14,8 @@ input.addEventListener('keypress', function(event) {
     document.querySelector('ul').appendChild(li); //push 4
 
     let counter = ""; //"" 
-    let max     = 0;//1
-    let item  ;// array[0]
+    let max     = 1;//c'era 0 //10
+    let item = array[0] ;// era vuota //11
     const elems = [];
 
     for (let i = 0; i < array.length; i++) {
@@ -26,8 +26,8 @@ input.addEventListener('keypress', function(event) {
         } else {
             elems[val]++;
         }
-
-        for (let j = i; j < array.length; j++) { //i++ 6
+            //cera j = i; 9
+        for (let j = 0; j < array.length; j++) { //i++ 6
             if (array[i] == array[j]) {
                 counter++;
                 if (max < counter) {
@@ -40,14 +40,17 @@ input.addEventListener('keypress', function(event) {
     }
 
     const alert = document.getElementsByClassName('alert')[0]; //[0] 7
+    console.log(alert);
+//manca qualcosa qui ma non riesco a capire cosa
 
     alert.classList.remove('d-none');
     alert.classList.add('d-flex');
-    
+
     alert.querySelector('span:first-child').innerText = item;
     alert.querySelector('span:last-child').innerText = max;
 
-    
+
+  
 
     console.log(`${item} trovato ${max} volte`);
 });
