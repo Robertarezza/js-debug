@@ -10,20 +10,21 @@
 *******************************************************************************/
 
 
-// ESERCIZIO 1 era impostato con i magg di 5 ma i parte da 0 quindi per far funzionare il ciclo deve essere inpostato su minore
-for (let i = 0; i < 5; i++) {
-    console.log(i);//cosi in consol ci saranno tittu i num minori di 5
-}
-
-
-// ESERCIZIO 2
-// function addIfEven(num) {
-//     if (num % 2 = 0) {
-//         return num + 5;
-//     }
-//     return num;
+// // ESERCIZIO 1 era impostato con i magg di 5 ma i parte da 0 quindi per far funzionare il ciclo deve essere inpostato su minore
+// for (let i = 0; i < 5; i++) {
+//     console.log(i);//cosi in consol ci saranno tittu i num minori di 5
 // }
 
+
+// ESERCIZIO 2 mancavano altri due  == perche con un solo = è un operatore di assegnazione, quindi assegniamo un valore, mentre === è un operatore di confronto o uguaglianza, in qst caso stiamo chiedendo se il num(valore che inseriamo) è divisibile per 2 qnd resto 0 allora restutisce il num dichiarato +5 altrimenti restirutuirà solo il num dichiarato
+function addIfEven(num) {
+    if (num % 2 === 0) {
+        return num + 5;
+    }
+    return num;
+}
+
+console.log(addIfEven(2));//se inserisco 2 mi restituisce 7 se inserisco 5 mi restituisce 5 perchè 5 non è div per 2
 
 // // ESERCIZIO 3
 // function loopToFive() {
