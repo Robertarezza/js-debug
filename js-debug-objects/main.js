@@ -25,7 +25,7 @@ const cars = [
     {
         manufacturer: 'Volkswagen',
         model: 'Golf',
-        type: 'Benzina'
+        type: 'benzina'     // 2 in alcuni usano le maiuscolo in altre le minuscole
     },
     {
         manufacturer: 'Fiat',
@@ -50,28 +50,34 @@ const cars = [
     {
         manufacturer: 'Ford',
         model: 'Kuga',
-        type: 'Diesel'
+        type: 'diesel'          // 2 in alcuni usano le maiuscolo in altre le minuscole
     },
     {
         manufacturer: 'Seat',
         model: 'Ibiza',
         type: 'metano'
-    }
+    },                          //1 mancava una virgola
     {
         manufacturer: 'Audi',
         model: 'R8',
-        type: 'Benzina'
+        type: 'benzina'         // 2 in alcuni usano le maiuscolo in altre le minuscole
     },
 ];
 
-const gasolineCars = cars.filter( (auto) >= auto.type === 'benzina');
+//3 non abbiamo dichiarato le variabili dove salvare i 3 filtri
+let gasolineCars = [];
+let dieselCars = [];
+let otherCars = [];
 
-const dieselCars = cars.filter( (auto) => {
-    auto.type === 'diesel';
+
+ gasolineCars = cars.filter( (auto) => auto.type === 'benzina'); //4  l'arrow fuction non era stata scritta correttamente
+
+ dieselCars = cars.filter( (auto) => {
+    return auto.type === 'diesel';                 //5 qui manca il return
 });
 
-const otherCars = cars.filter( (auto) => {
-    return auto.type !== 'benzina' || auto.type !== 'diesel';
+ otherCars = cars.filter( (auto) => {
+    return auto.type !== 'benzina' && auto.type !== 'diesel'; //6 qui non dobbiamo usare || ma &&
 });
 
 console.log('Auto a benzina');
