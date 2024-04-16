@@ -47,52 +47,54 @@
 // addNumbers();
 
 
-// // ESERCIZIO 4 ora funziona controlla se l'email che inserisce l'utente è tra quelle con accesso consentito
+// // // ESERCIZIO 4 ora funziona controlla se l'email che inserisce l'utente è tra quelle con accesso consentito
 function checkAccess() {
-    const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
+     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
     const userEmail = prompt('Inserisci il tuo indirizzo email');
 
-    let grantAccess = false; //era messo negli apici come una stringa, cosi cercava la parola false
+   let grantAccess = "false"; //era messo negli apici 
 
     if (addresses.includes(userEmail)) {
-        grantAccess = true; //era messo negli apici come una stringa cosi cercava la parola true
-    }
+         grantAccess = "true"; 
+     }
 
-    if (grantAccess === true) {
-        console.log('Accesso consentito!');
+    if (grantAccess === "true") { //qui invece no
+         console.log('Accesso consentito!');
     } else {
         console.log('Accesso negato!');
     }
-}
+ }
  checkAccess(); 
 
 
-// // ESERCIZIO 5 (suggerimento: c'è un solo errore)
-// function checkAccessImproved() {
-//     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
+// // // ESERCIZIO 5 (suggerimento: c'è un solo errore) errore di scrittura mancava la graffa prima dell'ultimo if 
+//  function checkAccessImproved() {
+//      const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
 
 //     const userEmail = prompt('Inserisci il tuo indirizzo email');
 
-//     let grantAccess = 'false';
+//     let grantAccess = "false";
 
-//     for (let i = 0; i < addresses.length; i++) {
-//         const email = addresses[i];
+//      for (let i = 0; i < addresses.length; i++) {
+//          const email = addresses[i];
 
 //         if (userEmail.length > 5) {
 
-//             if (email === userEmail) {
-//                 grantAccess = 'true';
+//              if (email === userEmail) {
+//                 grantAccess = "true"; 
 
 //             }
 
-//         }
+//          }
+//         } //qui
 
-//         if (grantAccess) {
-//             console.log('Accesso consentito!');
-//         } else {
+//         if (grantAccess === "true") {
+//              console.log('Accesso consentito!');
+//          } else {
 //             console.log('Accesso negato!');
-//         }
-//     }
+//          }
+    
+// }
 //     checkAccessImproved();
 
 
