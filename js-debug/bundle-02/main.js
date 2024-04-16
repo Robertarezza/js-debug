@@ -17,10 +17,10 @@
 
 //     if (age < 18) {
 //         message = `Sei troppo giovane! Hai ${age} anni!`;
-        
+
 //     } else {
 //         message = "Hai più di 18 anni!";
-       
+
 //     }
 //     return message
 // }
@@ -38,33 +38,33 @@
 
 
 // // ESERCIZIO 3 sta facendo la concatenazione e non l'addizione, aggiungendo parseInt al prompt riceveremo un numero e allora fara l'addizione
- function addNumbers() {
-   const userNumber = parseInt(prompt('Inserisci un numero'));
-    const total = userNumber + 12;
+//  function addNumbers() {
+//    const userNumber = parseInt(prompt('Inserisci un numero'));
+//     const total = userNumber + 12;
 
-     console.log(`Il risultato finale è ${total}`);
- }
-addNumbers();
+//      console.log(`Il risultato finale è ${total}`);
+//  }
+// addNumbers();
 
 
-// // ESERCIZIO 4
-// function checkAccess() {
-//     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
-//     const userEmail = prompt('Inserisci il tuo indirizzo email');
+// // ESERCIZIO 4 ora funziona controlla se l'email che inserisce l'utente è tra quelle con accesso consentito
+function checkAccess() {
+    const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
+    const userEmail = prompt('Inserisci il tuo indirizzo email');
 
-//     let grantAccess = 'false';
+    let grantAccess = false; //era messo negli apici come una stringa, cosi cercava la parola false
 
-//     if (addresses.includes(userEmail)) {
-//         grantAccess = 'true';
-//     }
+    if (addresses.includes(userEmail)) {
+        grantAccess = true; //era messo negli apici come una stringa cosi cercava la parola true
+    }
 
-//     if (grantAccess === true) {
-//         console.log('Accesso consentito!');
-//     } else {
-//         console.log('Accesso negato!');
-//     }
-// }
-// checkAccess();
+    if (grantAccess === true) {
+        console.log('Accesso consentito!');
+    } else {
+        console.log('Accesso negato!');
+    }
+}
+ checkAccess(); 
 
 
 // // ESERCIZIO 5 (suggerimento: c'è un solo errore)
