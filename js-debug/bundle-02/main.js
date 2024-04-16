@@ -29,22 +29,22 @@
 
 
 
- // ESERCIZIO 2 è scritto male lenght va scritto cosi length
- function printColorsNumber() {
-     const colors = ['blue', 'red', 'yellow', 'green', 'black'];
-    console.log(`Nella mia palette ci sono ${colors.length} colori!`);
+//  // ESERCIZIO 2 è scritto male lenght va scritto cosi length
+//  function printColorsNumber() {
+//      const colors = ['blue', 'red', 'yellow', 'green', 'black'];
+//     console.log(`Nella mia palette ci sono ${colors.length} colori!`);
+//  }
+//  printColorsNumber();
+
+
+// // ESERCIZIO 3 sta facendo la concatenazione e non l'addizione, aggiungendo parseInt al prompt riceveremo un numero e allora fara l'addizione
+ function addNumbers() {
+   const userNumber = parseInt(prompt('Inserisci un numero'));
+    const total = userNumber + 12;
+
+     console.log(`Il risultato finale è ${total}`);
  }
- printColorsNumber();
-
-
-// // ESERCIZIO 3
-// function addNumbers() {
-//     const userNumber = prompt('Inserisci un numero');
-//     const total = userNumber + 12;
-
-//     console.log(`Il risultato finale è ${total}`);
-// }
-// addNumbers();
+addNumbers();
 
 
 // // ESERCIZIO 4
