@@ -11,30 +11,30 @@
 
 
 // ESERCIZIO 1 , Le variabili sono state dichiarate con const, ma vanno dichiarate con let se non possiamo riutilizzarle, in più my Age è impostata su 32 quindi non ha molto senso  potemmo renderla più generica eliminando la variabile myAge aggiungendo il parametro age e dargli il return del message, cosi è generica ha senso e può essere riutilizzata
-function checkAge(age) {
+// function checkAge(age) {
 
-    let message = '';
+//     let message = '';
 
-    if (age < 18) {
-        message = `Sei troppo giovane! Hai ${age} anni!`;
+//     if (age < 18) {
+//         message = `Sei troppo giovane! Hai ${age} anni!`;
         
-    } else {
-        message = "Hai più di 18 anni!";
+//     } else {
+//         message = "Hai più di 18 anni!";
        
-    }
-    return message
-}
-console.log(checkAge(17)); ; //Quando chiamiamo checkAge(), prima usciva undefined poichè eseguirà solo else perchè myAge è impostato su 32 anni, in più  non staiamo facendo nulla con quel messaggio se non memorizzandolo nel messaggio variabile.
+//     }
+//     return message
+// }
+// console.log(checkAge(17)); ; //Quando chiamiamo checkAge(), prima usciva undefined poichè eseguirà solo else perchè myAge è impostato su 32 anni, in più  non staiamo facendo nulla con quel messaggio se non memorizzandolo nel messaggio variabile.
 //ora invece qualsiasi parametro "eta" gli passi a checkAge(), ti dirà se hai più o meno di 18 anni
 
 
 
-// // ESERCIZIO 2
-// function printColorsNumber() {
-//     const colors = ['blue', 'red', 'yellow', 'green', 'black'];
-//     console.log(`Nella mia palette ci sono ${colors.lenght} colori!`);
-// }
-// printColorsNumber();
+ // ESERCIZIO 2 è scritto male lenght va scritto cosi length
+ function printColorsNumber() {
+     const colors = ['blue', 'red', 'yellow', 'green', 'black'];
+    console.log(`Nella mia palette ci sono ${colors.length} colori!`);
+ }
+ printColorsNumber();
 
 
 // // ESERCIZIO 3
