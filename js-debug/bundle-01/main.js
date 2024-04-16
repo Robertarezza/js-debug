@@ -16,23 +16,24 @@
 // }
 
 
-// ESERCIZIO 2 mancavano altri due  == perche con un solo = è un operatore di assegnazione, quindi assegniamo un valore, mentre === è un operatore di confronto o uguaglianza, in qst caso stiamo chiedendo se il num(valore che inseriamo) è divisibile per 2 qnd resto 0 allora restutisce il num dichiarato +5 altrimenti restirutuirà solo il num dichiarato
-function addIfEven(num) {
-    if (num % 2 === 0) {
-        return num + 5;
-    }
-    return num;
-}
-
-console.log(addIfEven(2));//se inserisco 2 mi restituisce 7 se inserisco 5 mi restituisce 5 perchè 5 non è div per 2
-
-// // ESERCIZIO 3
-// function loopToFive() {
-//     for (let i = 0, i < 5, i++) {
-//         console.log(i);
+// // ESERCIZIO 2 mancavano altri due  == perche con un solo = è un operatore di assegnazione, quindi assegniamo un valore, mentre === è un operatore di confronto o uguaglianza, in qst caso stiamo chiedendo se il num(valore che inseriamo) è divisibile per 2 qnd resto 0 allora restutisce il num dichiarato +5 altrimenti restirutuirà solo il num dichiarato
+// function addIfEven(num) {
+//     if (num % 2 === 0) {
+//         return num + 5;
 //     }
+//     return num;
 // }
 
+// console.log(addIfEven(2));//se inserisco 2 mi restituisce 7 se inserisco 5 mi restituisce 5 perchè 5 non è div per 2
+
+// // ESERCIZIO 3 // mancavano i ; dopo lo 0 e il 5 nel ciclo for
+function loopToFive() {
+
+    for (let i = 0; i < 5; i++) {
+        console.log(i);
+    }
+}
+ loopToFive();//al richiamo la funzione stampa in console i num da 0 a 4 come richiesto
 
 // // ESERCIZIO 4 (suggerimento: ci sono 7 errori)
 // function displayEvenNumbers() {
